@@ -115,7 +115,7 @@ footer {
 
 	main {
 		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: repeat(12, 5em);
+		grid-template-rows: repeat(8, 5em);
 	}
 
 	.full {
@@ -136,7 +136,7 @@ footer {
 	}
 
     footer {
-        grid-row-start: 12;
+        grid-row-start: 8;
         grid-column-end: span 2;
     }
 }
