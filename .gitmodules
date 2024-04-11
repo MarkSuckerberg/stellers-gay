@@ -1,0 +1,3 @@
+[submodule "assets/urw-base35-fonts"]
+	path = assets/urw-base35-fonts
+	url = https://github.com/ArtifexSoftware/urw-base35-fonts.git
