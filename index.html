@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
 		<title>Steller's Gay</title>
 	</head>
 	<body>
@@ -27,8 +28,9 @@
 			</ul>
 
 			<footer>
-				<p><a href="https://github.com/MarkSuckerberg/stellers-gay">Source Code</a> | <a href="about">About</a> | <a href="mailto:mark@stellers.gay">Contact</a></p>
+				<p><a href="https://github.com/MarkSuckerberg/stellers-gay">Source Code</a> | <button hx-get="about.html" hx-swap="outerHTML" hx-target="closest main">About</button> | <a href="mailto:mark@stellers.gay">Contact</a></p>
 			</footer>
 		</main>
 	</body>
 </html>
+

@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="https://unpkg.com/htmx.org@1.9.11" integrity="sha384-0gxUXCCR8yv9FM2b+U3FDbsKthCI66oH5IA9fHppQq9DDMHuMauqq1ZHBpJxQ0J0" crossorigin="anonymous"></script>
 		<title>About - Steller's Gay</title>
 	</head>
 	<body>
@@ -19,8 +20,9 @@
 			<a class="full" href="https://ko-fi.com/marksuckerberg">Support me on Ko-fi!</a>
 
 			<footer>
-				<p><a href="https://github.com/MarkSuckerberg/stellers-gay">Source Code</a> | <a href="index">Home</a> | <a href="mailto:mark@stellers.gay">Contact</a></p>
+				<p><a href="https://github.com/MarkSuckerberg/stellers-gay">Source Code</a> | <button hx-get="index.html" hx-swap="outerHTML" hx-target="closest main">Home</button> | <a href="mailto:mark@stellers.gay">Contact</a></p>
 			</footer>
 		</main>
 	</body>
 </html>
+
