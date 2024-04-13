@@ -1,6 +1,6 @@
 body {
-	background: #0077CC;
-	margin: 2em auto 2em 2em;
+	background: #1A6DD9;
+	margin: 0 auto 0 0;
 	max-width: 44em;
 	padding: 0;
 	font: 1.2em/1.3em NimbusSans, sans-serif;
@@ -57,7 +57,9 @@ ul {
 }
 
 a {
-	color: #000;
+	color: inherit;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 button {
@@ -65,7 +67,7 @@ button {
 	background: none;
 	font: inherit;
 	cursor: pointer;
-	text-decoration: underline;
+    font-weight: bold;
 }
 
 main {
@@ -74,6 +76,23 @@ main {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(6, 5em);
 	vertical-align: top;
+    padding: 2em;
+
+    background: inherit;
+    filter: invert(1);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+.clip {
+    background-image: linear-gradient(135deg, #1A6DD9 50%, #000000 50%);
+
+    background-image: url('images/jay.svg');
+    background-color: #1A6DD9;
+    background-size: cover;
 }
 
 footer {
@@ -114,6 +133,7 @@ footer {
     }
 
 	main {
+        padding: 0;
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(8, 5em);
 	}
@@ -138,5 +158,11 @@ footer {
     footer {
         grid-row-start: 8;
         grid-column-end: span 2;
+    }
+}
+
+@media screen and (max-width: 23em) {
+    body {
+        font-size: 1em;
     }
 }
