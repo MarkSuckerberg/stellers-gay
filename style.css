@@ -1,5 +1,5 @@
 body {
-	background: #1A6DD9;
+	background: #148;
 	margin: 0 auto 0 0;
 	max-width: 44em;
 	padding: 0;
@@ -88,10 +88,8 @@ main {
 }
 
 .clip {
-    background-image: linear-gradient(135deg, #1A6DD9 50%, #000000 50%);
-
     background-image: url('images/jay.svg');
-    background-color: #1A6DD9;
+	background-color: inherit;
     background-size: cover;
 }
 
